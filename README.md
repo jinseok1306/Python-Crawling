@@ -62,7 +62,7 @@ def UrlList():
 웹 페이지의 정보를 추출하기 위해 beautifulsoup4 모듈을 `pip install requests beautifulsoup4` 명령어로 설치한다.
 
 print 주석을 해제하고 UrlList()를 호출하면 뉴스 검색화면에서 기사 URL들만 추출한 것을 확인할 수 있다. 
-<img src="./scan/python urlList.png"  width="800" >  
+<img src="./scan/python UrlList.png"  width="800" >  
 
 참고로 위 예시에서는 네이버 뉴스검색에서 기사 URL의 Class가 news_tit이기에 해당 값으로 필터링한 것이다. 만약 다른 뉴스페이지를 크롤링한다면 개발자도구로 확인 후 class값을 수정해야된다.  
 
@@ -93,7 +93,7 @@ def UrlText():
 UrlList를 통해 가져온 URL로 접속하여 텍스트가 들어간 태그에 텍스트만 추출한다. 이때 줄바꿈, 탭의 경우는 정규식으로 공란처리했고 URL 읽기에 실패한 경우 종료되지 않도록 예외처리를 진행했다.  
 
 실제로 실행하면 아래와 같은 결과를 볼 수 있다.
-<img src="./scan/python urlList.png"  width="800" >  
+<img src="./scan/python UrlText.png"  width="800" >  
 
 ### 8. 형태소 분석하기  
 이제 추출한 텍스트의 형태소를 분석하여 각 단어별 빈도를 확인하는 소스를 작성할 것이다.
